@@ -14,6 +14,27 @@ convertBtn.addEventListener( "click", btnClicked)
 
     function btnClicked() {
         console.log("Button is clicked, you are a pro!")
+        sumLength()
+        sumVolume()
+        sumMass()
+    }
+
+    function sumLength(){
+        let inputValue = inputEl.value
+        let multiOutput = inputValue * 3.281
+        sumLengthEl.textContent = `${inputValue} meters = ${multiOutput.toFixed(2)} feet | ${multiOutput.toFixed(2)} feet = ${inputValue} meters`
+    }
+
+    function sumVolume(){
+        let inputValue = inputEl.value
+        let multiOutput = inputValue * 0.264
+        sumVolumeEl.textContent = `${inputValue} liters = ${multiOutput.toFixed(2)} gallons | ${multiOutput.toFixed(2)} gallons = ${inputValue} liters`
+    }
+
+    function sumMass(){
+        let inputValue = inputEl.value
+        let multiOutput = inputValue * 2.204
+        sumMassEl.textContent = `${inputValue} kilos = ${multiOutput.toFixed(2)} pounds | ${multiOutput.toFixed(2)} pounds = ${inputValue} kilos`
     }
 // create an inputfield 
 // create a button that activates a onclick function
