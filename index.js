@@ -25,6 +25,8 @@ convertBtn.addEventListener("click", function(){   // Add click addEventListener
 
 
 
+// ** OLD CODE **
+
 // convertBtn.addEventListener( "click", btnClicked) 
 
 //     function btnClicked() {
