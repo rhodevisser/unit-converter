@@ -51,12 +51,7 @@ convertBtn.addEventListener("click", function(){
 //     }
 
 
-
-
-
-
-
-
+ // // ** PSEUDOPROGRAM **
 
 // // create an inputfield 
 // // create a button that activates a onclick function x
