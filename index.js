@@ -1,16 +1,16 @@
 
-let inputEl = document.getElementById("input-el")
-let convertBtn = document.getElementById("convert-btn")
-let sumVolumeEl = document.getElementById("sum-volume-el")
-let sumLengthEl = document.getElementById("sum-length-el")
-let sumMassEl = document.getElementById("sum-mass-el")
+let inputEl = document.getElementById("input-el") // Add inputfield to DOM
+let convertBtn = document.getElementById("convert-btn") // Add convertbutton to DOM
+let sumVolumeEl = document.getElementById("sum-volume-el") // Add output elements to DOM
+let sumLengthEl = document.getElementById("sum-length-el") //
+let sumMassEl = document.getElementById("sum-mass-el") //
 
-const meterToFeet = 3.281
-const literToGallon = 0.264 
-const kilogramToPount = 2.204
+const meterToFeet = 3.281 // set value to variable 
+const literToGallon = 0.264 // 
+const kilogramToPount = 2.204 //
 
-convertBtn.addEventListener("click", function(){ 
-    let inputValue = inputEl.value
+convertBtn.addEventListener("click", function(){   // Add click addEventListener to btn for function
+    let inputValue = inputEl.value // that takes the inputfield value
 
     sumLengthEl.textContent = `${inputValue} meters = ${inputValue * meterToFeet.toFixed(2)} feet | 
     ${inputValue * meterToFeet.toFixed(2)} feet = ${inputValue} meters`
@@ -21,7 +21,9 @@ convertBtn.addEventListener("click", function(){
     sumMassEl.textContent = `${inputValue} kilos = ${inputValue * kilogramToPount.toFixed(2)} pounds | 
     ${inputValue * kilogramToPount.toFixed(2)} pounds = ${inputValue} kilos`
 }
-)
+) // and write literal strings that combine value from inputfield and value vars set to each unit 
+
+
 
 // convertBtn.addEventListener( "click", btnClicked) 
 
