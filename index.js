@@ -11,6 +11,9 @@ let sumLengthEl = document.getElementById("sum-length-el")
 let sumMassEl = document.getElementById("sum-mass-el")
 
 convertBtn.addEventListener( "click", btnClicked) 
+const meterToFeet = 3.281
+const literToGallon = 0.264 
+const kilogramToPount = 2.204
 
     function btnClicked() {
         console.log("Button is clicked, you are a pro!")
@@ -18,18 +21,24 @@ convertBtn.addEventListener( "click", btnClicked)
         sumVolume()
         sumMass()
     }
+convertBtn.addEventListener("click", function(){ 
+    let inputValue = inputEl.value
 
     function sumLength(){
         let inputValue = inputEl.value
         let multiOutput = inputValue * 3.281
         sumLengthEl.textContent = `${inputValue} meters = ${multiOutput.toFixed(2)} feet | ${multiOutput.toFixed(2)} feet = ${inputValue} meters`
     }
+    sumLengthEl.textContent = `${inputValue} meters = ${inputValue * meterToFeet.toFixed(2)} feet | 
+    ${inputValue * meterToFeet.toFixed(2)} feet = ${inputValue} meters`
 
     function sumVolume(){
         let inputValue = inputEl.value
         let multiOutput = inputValue * 0.264
         sumVolumeEl.textContent = `${inputValue} liters = ${multiOutput.toFixed(2)} gallons | ${multiOutput.toFixed(2)} gallons = ${inputValue} liters`
     }
+    sumVolumeEl.textContent = `${inputValue} liters = ${inputValue * literToGallon.toFixed(2)} gallons | 
+    ${inputValue * literToGallon.toFixed(2)} gallons = ${inputValue} liters`
 
     function sumMass(){
         let inputValue = inputEl.value
@@ -38,6 +47,10 @@ convertBtn.addEventListener( "click", btnClicked)
     }
 // create an inputfield 
 // create a button that activates a onclick function
+    sumMassEl.textContent = `${inputValue} kilos = ${inputValue * kilogramToPount.toFixed(2)} pounds | 
+    ${inputValue * kilogramToPount.toFixed(2)} pounds = ${inputValue} kilos`
+}
+)
 
 // write html.textcontent to output inputfield value to UI in all blocks 
 
