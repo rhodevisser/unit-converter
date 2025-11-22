@@ -4,6 +4,13 @@
 1 kilogram = 2.204 pound
 */
 
+let convertBtn = document.getElementById("convert-btn")
+
+convertBtn.addEventListener( "click", btnClicked) 
+
+    function btnClicked() {
+        console.log("Button is clicked, you are a pro!")
+    }
 // create an inputfield 
 // create a button that activates a onclick function
 
