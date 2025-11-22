@@ -5,6 +5,9 @@
 */
 
 let convertBtn = document.getElementById("convert-btn")
+let sumVolumeEl = document.getElementById("sum-volume-el")
+let sumLengthEl = document.getElementById("sum-length-el")
+let sumMassEl = document.getElementById("sum-mass-el")
 
 convertBtn.addEventListener( "click", btnClicked) 
 
