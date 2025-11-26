@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="index.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
         <title>Document</title>
     </head>
 
@@ -18,51 +19,57 @@
                 Metric/Imperial Unit Conversion 
             </h1>
             <div 
-        class="input-number">
-            <input 
-            type="text"
-            placeholder="type num..."
-            id="input-el">
-            <button 
-            id="convert-btn">
-                Convert, darling
-            </button>
-        </div>
+            class="input-number">
+                <input 
+                type="text"
+                placeholder="0"
+                class="input-field-styling"
+                id="input-el">
+                <button
+                class="input-btn-styling"
+                id="convert-btn">
+                    Convert, darling
+                </button>
+            </div>
         </header>
 
         
         <section 
         class="all-containers">
+        
             <div
-            class="container">
+            class="container title-styling">
                 <h2>
                     Length (Meter/Feet)
                 </h2>
                 <p
                 id="sum-length-el">
+                    0 meters = 0 feet | 0 feet = 0 meters
                 </p>
             </div>
 
             <div
-            class="container">
+            class="container title-styling">
                 <h2>
                     Volume (Liters/Gallons)
-
                 </h2>
                 <p
                 id ="sum-volume-el">   
+                    0 liters = 0 gallons | 0 gallons = 0 liters
                 </p>
             </div>
 
             <div
-            class="container">
+            class="container title-styling">
                 <h2>
                     Mass (Kilograms/Pounds)
                 </h2>
                 <p
                 id="sum-mass-el">   
+                    0 kilos = 0 pounds | 0 pounds = 0 kilos
                 </p>
             </div>
+
         </section>
 
         <script src="index.js">

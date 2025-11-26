@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: black;
+    font-family: "Inter", sans-serif;
 }
 
 header {
@@ -10,16 +11,49 @@ header {
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #6943FF;
+    color: #FFFFFF;
 }
 
 h1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 28px;    
+}
+
+.input-field-styling {
+    border: #B295FF 2px solid;
+    height: 83px;
+    width: 117px;
+    background-color: #6943FF;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 58px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.input-field-styling::placeholder {
     color: #FFFFFF;
 }
+
+.input-field-styling:focus-visible {
+    outline: none;
+    box-shadow: inset 0 0 5px #FFFFFF;  
+}
+
 .input-number {
     display: flex; 
     flex-direction: column;
     align-items: center;
+}
+
+.input-btn-styling {
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+    height: 42px;
+    width: 117px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px;
 }
 
 .all-containers {
@@ -35,7 +69,16 @@ h1 {
     width: 500px;
     background-color: #273549;
     margin: 10px;
-    color: #CCC1FF;
     display: block;
     margin: auto;
+}
+
+.title-styling h2 {
+    font-size: 20px;
+    color: #CCC1FF;
+}
+
+.title-styling p {
+    font-size: 14px;
+    color: #FFFFFF;
 }
