@@ -12,14 +12,14 @@ const kilogramToPount = 2.204 //
 convertBtn.addEventListener("click", function(){   // Add click addEventListener to btn for function
     let inputValue = inputEl.value // that takes the inputfield value
 
-    sumLengthEl.textContent = `${inputValue} meters = ${inputValue * meterToFeet.toFixed(2)} feet | 
-    ${inputValue * meterToFeet.toFixed(2)} feet = ${inputValue} meters`
+    sumLengthEl.textContent = `${inputValue} meters = ${(inputValue * meterToFeet).toFixed(2)} feet | 
+    ${(inputValue * meterToFeet).toFixed(2)} feet = ${inputValue} meters`
 
-    sumVolumeEl.textContent = `${inputValue} liters = ${inputValue * literToGallon.toFixed(2)} gallons | 
-    ${inputValue * literToGallon.toFixed(2)} gallons = ${inputValue} liters`
+    sumVolumeEl.textContent = `${inputValue} liters = ${(inputValue * literToGallon).toFixed(2)}gallons | 
+    ${(inputValue * literToGallon).toFixed(2)} gallons = ${inputValue} liters`
 
-    sumMassEl.textContent = `${inputValue} kilos = ${inputValue * kilogramToPount.toFixed(2)} pounds | 
-    ${inputValue * kilogramToPount.toFixed(2)} pounds = ${inputValue} kilos`
+    sumMassEl.textContent = `${inputValue} kilos = ${(inputValue * kilogramToPount).toFixed(2)} pounds | 
+    ${(inputValue * kilogramToPount).toFixed(2)} pounds = ${inputValue} kilos`
 }
 ) // and write literal strings that combine value from inputfield and value vars set to each unit 
 
