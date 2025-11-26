@@ -68,14 +68,19 @@ h1 {
     height: 109px;
     width: 500px;
     background-color: #273549;
-    margin: 10px;
     display: block;
-    margin: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .title-styling h2 {
     font-size: 20px;
     color: #CCC1FF;
+    margin-bottom: 0px;
 }
 
 .title-styling p {
